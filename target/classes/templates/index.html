@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>File Service</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div class="container">
+    <div>
+        <h1>Spring Boot Project Downloadable Files</h1>
+    </div>
+    <table cellspacing="10">
+        <tr>
+            <th>Name</th>
+            <th>Extension</th>
+            <th>Byte Size</th>
+            <th>Mime Type</th>
+        </tr>
+        <tr th:each="file : ${files}">
+            <td th:text="${file.name}"></td>
+            <td th:text="${file.extension}"></td>
+            <td th:text="${file.byteSize}"></td>
+            <td th:text="${file.mimeType}"></td>
+            <td><a th:href="${file.originalName}">Download</a></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

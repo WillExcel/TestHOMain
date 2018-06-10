@@ -1,0 +1,10 @@
+// Please ensure you have Java, Maven and Use Firefox browser
+// Ensure you download the source using maven
+// use firefox browser
+// Run from commander: 'mvnw spring-boot:run'
+// To change the folder from where the files are loaded edit application.properties 'folderPath' variable.
+// I have made use of the service layer and even parameterize the call as to be able to accept different file type
+// Before you Run the Test / Application using the TestRunner Class, Change the path in the application to you local
+//Also added an interface as to manage the data [File extension etc ]easily
+// Use test runner to run the application and the test together using one class.
+
